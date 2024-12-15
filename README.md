@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+# Calculadora de Propinas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación para calcular propinas, desarrollada utilizando React, Vite y TypeScript. Este proyecto representa uno de mis primeros acercamientos a estas tecnologías y me ha permitido aprender y experimentar con el desarrollo de aplicaciones web modernas. La calculadora de propinas es fácil de usar y demuestra cómo se pueden combinar estas herramientas para crear una aplicación funcional y eficiente.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js
+- npm
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clona el repositorio:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/Draekk/calculadora-propinas.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navega al directorio del proyecto:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd calculadora-propinas
 ```
+
+3. Instala las dependencias:
+
+```bash
+npm install
+```
+
+## Uso
+
+Para iniciar la aplicación, ejecuta el siguiente comando:
+
+```bash
+npm run dev
+```
+
+La aplicación se ejecutará en el puerto `5173`.
+
+## Despliegue
+
+Puedes acceder a la aplicación desplegada en el siguiente enlace:
+[Calculadora de Propinas](https://chipper-melba-452ddf.netlify.app/)
+
+## Tecnologías Utilizadas
+
+- React
+- Vite
+- TypeScript
+
+¡Gracias por visitar mi proyecto!
